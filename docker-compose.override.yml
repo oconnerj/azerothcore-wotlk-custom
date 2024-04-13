@@ -1,0 +1,13 @@
+# overrides to allow specifying mysql DB on an unraid share
+services:
+  ac-database:
+    volumes:
+      - ${DOCKER_VOL_MYSQL:-ac-database}:/var/lib/mysql
+  ac-worldserver:
+    environment:
+      AC_RATE_LOYALTY: "2"
+      AC_RATE_XP_KILL: "1.33"
+      AC_RATE_XP_QUEST: "1.1"
+      AC_RATE_XP_PET: "1.33"
+      AC_RATE_DROP_MONEY: "1.25"
+      AC_MAIL_DELIVERY_DELAY: "1800"

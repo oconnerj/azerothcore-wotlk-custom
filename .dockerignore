@@ -12,3 +12,6 @@
 
 # do not ignore the ccache folder (used by the ci)
 !/var/docker/ccache
+
+# ignore this file plz
+mysql_root_pw.txt

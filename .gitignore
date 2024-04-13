@@ -92,3 +92,6 @@ local.properties
 #  !modules/yourmodule
 #
 # ==================
+
+mysql_root_pw.txt
+!docker-compose.override.yml
