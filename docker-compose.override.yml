@@ -24,5 +24,8 @@ services:
       AC_NPC_BOT_COST: "333333"
       AC_NPC_BOT_DPS_TARGET_ICON_MASK: "128"    # skull
       AC_NPC_BOT_NO_DPS_TARGET_ICON_MASK: "28"  # moon, diamond, triangle
+      AC_NPC_BOT_ENABLE_RAID: "1"
+      AC_NPC_BOT_ENABLE_BG: "1"
+      AC_NPC_BOT_ENABLE_ARENA: "1"
   ac-authserver:
     image: oconnerj/ac-wotlk-authserver:${DOCKER_IMAGE_TAG:-master}
