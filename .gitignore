@@ -99,3 +99,4 @@ local.properties
 
 mysql_root_pw.txt
 !docker-compose.override.yml
+lua-scripts/

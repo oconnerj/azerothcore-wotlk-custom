@@ -5,7 +5,10 @@ services:
       - ${DOCKER_VOL_MYSQL:-ac-database}:/var/lib/mysql
   ac-worldserver:
     image: oconnerj/ac-wotlk-worldserver:${DOCKER_IMAGE_TAG:-master}
+    volumes:
+      - ${DOCKER_VOL_LUA_SCRIPTS:-./lua-scripts}:/azerothcore/lua-scripts
     environment:
+      AC_MAX_CORE_STUCK_TIME: "45"
       AC_RATE_LOYALTY: "3"
       AC_RATE_XP_KILL: "1.5"
       AC_RATE_XP_QUEST: "1.33"
@@ -39,5 +42,6 @@ services:
       AC_NPC_BOT_WANDERING_BOTS_BG_ENABLE: "1"
       AC_NPC_BOT_HK_MESSAGE_ENABLE: "1"
       AC_NPC_BOT_HK_ACHIEVEMENTS_ENABLE: "1"
+      AC_ELUNA_SCRIPT_PATH: "/azerothcore/lua-scripts"
   ac-authserver:
     image: oconnerj/ac-wotlk-authserver:${DOCKER_IMAGE_TAG:-master}
