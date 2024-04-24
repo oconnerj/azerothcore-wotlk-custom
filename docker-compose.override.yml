@@ -43,5 +43,9 @@ services:
       AC_NPC_BOT_HK_MESSAGE_ENABLE: "1"
       AC_NPC_BOT_HK_ACHIEVEMENTS_ENABLE: "1"
       AC_ELUNA_SCRIPT_PATH: "/azerothcore/lua-scripts"
+      AC_AOE_LOOT_ENABLE: "1"
+      AC_AOE_LOOT_MAIL_ENABLE: "1"
+      AC_AOE_LOOT_RANGE: "30"
+      AC_RATE_CORPSE_DECAY_LOOTED: "0.01"
   ac-authserver:
     image: oconnerj/ac-wotlk-authserver:${DOCKER_IMAGE_TAG:-master}

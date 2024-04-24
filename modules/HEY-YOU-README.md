@@ -4,3 +4,4 @@ The current configuration here requires the following modules which are not chec
 
 * [mod-eluna](https://github.com/azerothcore/mod-eluna)
 * [mod-transmog](https://github.com/azerothcore/mod-transmog/tree/master)
+* [mod-aoe-loot](https://github.com/azerothcore/mod-aoe-loot)
