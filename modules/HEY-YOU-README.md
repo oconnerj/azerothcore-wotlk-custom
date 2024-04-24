@@ -1,7 +1,6 @@
 # Yes, you! Read me!
 
-The current configuration here requires mod-eluna, which is not checked in.
+The current configuration here requires the following modules which are not checked in:
 
-Follow these instructions:
-
-https://github.com/azerothcore/mod-eluna
+* [mod-eluna](https://github.com/azerothcore/mod-eluna)
+* [mod-transmog](https://github.com/azerothcore/mod-transmog/tree/master)
