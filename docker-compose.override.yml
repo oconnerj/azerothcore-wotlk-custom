@@ -29,8 +29,12 @@ services:
       AC_NPC_BOT_CLASSES_CRYPT_LORD_ENABLE: "0"
       AC_NPC_BOT_UPDATE_DELAY_BASE: "150"
       AC_NPC_BOT_COST: "333333"
-      AC_NPC_BOT_DPS_TARGET_ICON_MASK: "128"    # skull
-      AC_NPC_BOT_NO_DPS_TARGET_ICON_MASK: "28"  # moon, diamond, triangle
+      AC_NPC_BOT_DPS_TARGET_ICONS_MASK: "128"       # skull
+      AC_NPC_BOT_NO_DPS_TARGET_ICONS_MASK: "28"     # moon, diamond, triangle
+      AC_NPC_BOT_HEAL_TARGET_ICONS_MASK: "1"        # star
+      AC_NPC_BOT_TANK_TARGET_ICONS_MASK: "32"       # square
+      AC_NPC_BOT_OFF_TANK_TARGET_ICONS_MASK: "2"    # circle
+      AC_NPC_BOT_RANGED_DPS_TARGET_ICONS_MASK: "64" # cross
       AC_NPC_BOT_ENABLE_RAID: "1"
       AC_NPC_BOT_ENABLE_BG: "1"
       AC_NPC_BOT_ENABLE_ARENA: "1"
